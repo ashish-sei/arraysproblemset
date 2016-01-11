@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<FindBugsFilter>
+	<Match>
+	  <Bug pattern="EQ_OVERRIDING_EQUALS_NOT_SYMMETRIC" /> 
+	</Match> 
+	<Match>
+	  <Bug pattern="EI_EXPOSE_REP2" /> 
+	</Match>
+	<Match>
+	  <Bug pattern="EI_EXPOSE_REP" /> 
+	</Match> 
+	<Match>
+	  <Bug pattern="OBL_UNSATISFIED_OBLIGATION" /> 
+	</Match>
+	<Match>
+    	<Field type="javax.persistence.EntityManager" />
+    	<Bug pattern="SE_BAD_FIELD" />
+	</Match>
+ </FindBugsFilter>
